@@ -1,0 +1,8 @@
+# Colors
+
+background-color=#141414ff
+text-color=#ffffff
+border-color=#ffffff
+
+[urgency=high]
+border-color=#f5a97f
