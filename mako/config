@@ -1,8 +1,8 @@
-# Colors
-
 background-color=#141414ff
 text-color=#ffffff
 border-color=#ffffff
+width=300
+border-radius=4
 
 [urgency=high]
 border-color=#f5a97f
