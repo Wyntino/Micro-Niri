@@ -1,0 +1,57 @@
+[
+  {
+    "spacing": 10,
+    "layer": "top",
+    "position": "top",
+    "height": 30,
+    "width": 1080,
+    "modules-left": ["custom/cava"],
+    "modules-center": ["clock"],
+    "modules-right": ["bluetooth", "tray", "battery", "custom/reboot", "custom/power"],
+
+    "custom/cava": {
+      "format": "{}",
+      "exec": "~/.config/waybar/cava.sh"
+    },
+
+    "hyprland/window": {
+      "seperate-outputs": false
+    },
+
+    "clock": {
+      "format": "  {:%H:%M} ",
+      "tooltip": true,
+      "tooltip-format": "{:%A, %d %B %Y}"
+    },
+
+    "battery": {
+      "format": "{icon} {capacity}%",
+      "format-icons": ["", "", "", "", ""]
+    },
+
+    "tray": {
+      "icon-size": 16,
+      "spacing": 4
+    },
+
+    "bluetooth": {
+      "format": " {status}",
+      "format-connected": " {num_connections} connected",
+      "tooltip-format": "{controller_alias}\t{controller_address}",
+      "tooltip-format-connected": "{controller_alias}\t{controller_address}\n\n{device_enumerate}",
+      "tooltip-format-enumerate-connected": "{device_alias}\t{device_address}"
+    },
+
+    "custom/reboot": {
+      "format": "󰜉",
+      "tooltip": false,
+      "on-click": "reboot"
+    },
+
+    "custom/power": {
+      "format": "",
+      "tooltip": false,
+      "on-click": "shutdown now"
+    }
+  }
+]
